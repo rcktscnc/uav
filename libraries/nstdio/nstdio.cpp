@@ -2,10 +2,10 @@
 
 namespace nstd {
 
-char io::STDIO_BUFFER[params::STDIO_BUFFER_SIZE] = { 0 };
+char io::stdio_buffer[NSTDIO_BUFFER_SIZE] = { 0 };
 
 void io::init() {
-    Serial.begin(params::STDIO_SERIAL_PORT);
+    Serial.begin(NSTDIO_SERIAL_PORT);
 }
 
 }
